@@ -1,0 +1,90 @@
+a, blockquote span {
+color: #000033;
+}
+a.button_full, a.button_small, a.call_button a{
+background-color:#0066CC;
+}
+.button {
+border: 1px solid #000033;
+color: #000033;
+}
+.button.active {
+background: #000033;
+}
+#pages_maincontent h3{
+color:#833545;
+}
+.photo-categories a.active{
+background-color:#833545;
+}
+.post_date{
+color:#833545;
+}
+.list-block .swipeout-actions-left a,
+.list-block .swipeout-actions-right a {
+background: #833545;
+}
+.contactform input.form_submit, .loginform input.form_submit, .commentform input.form_submit{ 
+background-color:#0066CC;
+}
+/*===============================================*/
+/* HOME BG AND PAGES HEADER BG */
+/*===============================================*/	
+.homepage{
+background: url(../../images/colors/magenta/bg.jpg) no-repeat center center;
+background-attachment:fixed;
+-webkit-background-size: 100%; 
+-moz-background-size: 100%;
+-o-background-size: 100%;
+background-size: 100%;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover; 
+background-size: cover;
+}
+.navbarpages{
+background:url(../../images/colors/magenta/header.jpg) no-repeat center center;
+}
+/*===============================================*/
+/* MAIN NAV LINKS */
+/*===============================================*/	
+.main-nav ul li{
+background: #003366;
+border-bottom:1px #003399 solid;
+}
+.main-nav ul li a{
+color:#FFFFFF;
+}
+/*===============================================*/
+/* POPUPS AND TOOLBAR */
+/*===============================================*/	
+.popup{
+background: #000033;
+}
+.popup_borrar{
+background: #990000;
+}
+.popup-login, .popup-signup, .popup-forgot{
+background-color:#000033;
+}
+.toolbar:before {
+  background-color: #000033;
+}
+/*===============================================*/
+/* LEFT AND RIGHT SLIDE PANEL */
+/*===============================================*/	
+.panel {
+background:#0066CC;
+}
+.user-nav ul li, ul.popular_posts li{
+border-bottom:1px #000033 solid;
+}
+/* MENU OPENER ICON */
+ul.toolbar_icons li.menuicon{
+background-color:#000066;
+}
+
+/* PANEL CLOSE BUTTON */
+.close_popup_button a{
+background-color:#003399;
+}
