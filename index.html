@@ -5,15 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
 <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="apple-touch-startup-image-640x1096.html">
 <title>Inverhurca Ventas Movil</title>
-<link rel="stylesheet" href="css/framework7.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="css/colors/magenta.css">
-<link type="text/css" rel="stylesheet" href="css/swipebox.css" />
-<link type="text/css" rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="assets/css/framework7.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/colors/magenta.css">
+<link type="text/css" rel="stylesheet" href="assets/css/swipebox.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/animations.css" />
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" charset="utf-8" src="assets/js/cordova-2.3.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    function onDeviceReady() {
+    }
+
+    function onConfirm(buttonIndex) {
+        alert('You selected button ' + buttonIndex);
+    }
+
+    function showConfirm() {
+        navigator.notification.confirm(
+            'You are the winner!',  // message
+            onConfirm,  // callback to invoke with index of button pressed
+            'Game Over',            // title
+            'Restart,Exit'          // buttonLabels
+        );
+    }
+
+    </script>
+
 </head>
 <body id="mobile_wrap">
 
@@ -24,7 +47,7 @@
     <div class="panel panel-left panel-cover">
           <div class="user_login_info">
             <div class="user_thumb">
-            <img src="images/profile.jpg" alt="" title="" />
+            <img src="assets/images/profile.jpg" alt="" title="" />
               <div class="user_details">
                <p>Hola, <span>Nombre del Vendedor</span></p>
               </div>  
@@ -32,11 +55,11 @@
 
                   <nav class="user-nav">
                     <ul>
-                      <li><a href="features.html" class="close-panel"><img src="images/icons/white/settings.png" alt="" title="" /><span>Configuración</span></a></li>
-                      <li><a href="features.html" class="close-panel"><img src="images/icons/white/briefcase.png" alt="" title="" /><span>?????????</span></a></li>
-                      <li><a href="features.html" class="close-panel"><img src="images/icons/white/message.png" alt="" title="" /><span>?????????</span><strong class="green">12</strong></a></li>
-                      <li><a href="features.html" class="close-panel"><img src="images/icons/white/download.png" alt="" title="" /><span>???????????</span><strong class="blue">5</strong></a></li>
-                      <li><a href="index.html" class="close-panel"><img src="images/icons/white/lock.png" alt="" title="" /><span>Salir</span></a></li>
+                      <li><a href="features.html" class="close-panel"><img src="assets/images/icons/white/settings.png" alt="" title="" /><span>Configuración</span></a></li>
+                      <li><a href="features.html" class="close-panel"><img src="assets/images/icons/white/briefcase.png" alt="" title="" /><span>?????????</span></a></li>
+                      <li><a href="features.html" class="close-panel"><img src="assets/images/icons/white/message.png" alt="" title="" /><span>?????????</span><strong class="green">12</strong></a></li>
+                      <li><a href="features.html" class="close-panel"><img src="assets/images/icons/white/download.png" alt="" title="" /><span>???????????</span><strong class="blue">5</strong></a></li>
+                      <li><a href="#" class="close-panel" onclick="showConfirm(); return false;"><img src="assets/images/icons/white/lock.png" alt="" title="" /><span>Salir</span></a></li>
                     </ul>
                   </nav>
           </div>
@@ -48,26 +71,26 @@
         <div class="search_form">
         <form id="SearchForm" method="post">
         <input type="text" name="keyword" value="" class="search_input" placeholder="keyword" />
-        <input type="image" name="submit" class="search_submit" id="submit" src="images/icons/white/search.png" />
+        <input type="image" name="submit" class="search_submit" id="submit" src="assets/images/icons/white/search.png" />
         </form>
         </div>
         <div class="clear"></div>
         <h3>POPULAR POSTS</h3>
         <ul class="popular_posts">
         <li>
-        <a href="blog-single.html" class="close-panel"><img src="images/photos/photo1.jpg" alt="" title="" /></a>
+        <a href="blog-single.html" class="close-panel"><img src="assets/images/photos/photo1.jpg" alt="" title="" /></a>
         <span><a href="blog-single.html" class="close-panel">Design is not just what it looks like and feels like.</a></span>        </li>
         <li>
-        <a href="blog-single.html" class="close-panel"><img src="images/photos/photo2.jpg" alt="" title="" /></a>
+        <a href="blog-single.html" class="close-panel"><img src="assets/images/photos/photo2.jpg" alt="" title="" /></a>
         <span><a href="blog-single.html" class="close-panel">Fashion fades, only style remains the same.</a></span>        </li>
         <li>
-        <a href="blog-single.html" class="close-panel"><img src="images/photos/photo3.jpg" alt="" title="" /></a>
+        <a href="blog-single.html" class="close-panel"><img src="assets/images/photos/photo3.jpg" alt="" title="" /></a>
         <span><a href="blog-single.html" class="close-panel">Sed ut perspiciatis unde omnis iste accusantium.</a></span>        </li>
         <li>
-        <a href="blog-single.html" class="close-panel"><img src="images/photos/photo4.jpg" alt="" title="" /></a>
+        <a href="blog-single.html" class="close-panel"><img src="assets/images/photos/photo4.jpg" alt="" title="" /></a>
         <span><a href="blog-single.html" class="close-panel">Nemo enim ipsam voluptatem quia voluptas.</a></span>        </li>
         <li>
-        <a href="blog-single.html" class="close-panel"><img src="images/photos/photo5.jpg" alt="" title="" /></a>
+        <a href="blog-single.html" class="close-panel"><img src="assets/images/photos/photo5.jpg" alt="" title="" /></a>
         <span><a href="blog-single.html" class="close-panel">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</a></span>        </li>
         </ul>
     </div>
@@ -80,7 +103,7 @@
 
           <div data-page="index" class="page homepage">
             <div class="page-content">
-					<div class="logo"><img src="images/logo.png" alt="" title="" /></div> 
+					<div class="logo"><img src="assets/images/logo.png" alt="" title="" /></div> 
             </div>
           </div>
         </div>
@@ -88,11 +111,11 @@
         <div class="toolbar">
               <div class="toolbar-inner">
               <ul class="toolbar_icons">
-              <li><a href="#" data-panel="left" class="open-panel"><img src="images/icons/white/user.png" alt="" title="" /></a></li>
-              <li><a href="photos.html"><img src="images/icons/white/photos.png" alt="" title="" /></a></li>
-              <li class="menuicon"><a href="#" data-popup=".popup-menu" class="open-popup"><img src="images/icons/white/menu.png" alt="" title="" /></a></li>
-              <li><a href="clientesF.html"><img src="images/icons/white/contact.png" alt="" title="" /></a></li>
-              <li><a href="contact.html"><img src="images/icons/white/blog.png" alt="" title="" /></a></li>
+              <li><a href="#" data-panel="left" class="open-panel"><img src="assets/images/icons/white/user.png" alt="" title="" /></a></li>
+              <li><a href="photos.html"><img src="assets/images/icons/white/photos.png" alt="" title="" /></a></li>
+              <li class="menuicon"><a href="#" data-popup=".popup-menu" class="open-popup"><img src="assets/images/icons/white/menu.png" alt="" title="" /></a></li>
+              <li><a href="clientesF.html"><img src="assets/images/icons/white/contact.png" alt="" title="" /></a></li>
+              <li><a href="contact.html"><img src="assets/images/icons/white/blog.png" alt="" title="" /></a></li>
               </ul>
               </div>  
         </div>
@@ -104,21 +127,21 @@
     <div class="content-block">
               <nav class="main-nav">
                 <ul>
-                  <li><a href="index.html" class="close-popup"><img src="images/icons/white/home.png" alt="" title="" /><span>Inicio</span></a></li>
-                  <li><a href="clientes.html" class="close-popup"><img src="images/icons/white/toogle.png" alt="" title="" /><span>Clientes</span></a></li>
-                  <li><a href="about.html" class="close-popup"><img src="images/icons/white/user.png" alt="" title="" /><span>Clientes</span></a></li>
-                  <li><a href="features.html" class="close-popup"><img src="images/icons/white/settings.png" alt="" title="" /><span>Configuración</span></a></li>
-                  <li><a href="photos.html" class="close-popup"><img src="images/icons/white/photos.png" alt="" title="" /><span>Productos</span></a></li>
-                  <li><a href="videos.html" class="close-popup"><img src="images/icons/white/video.png" alt="" title="" /><span>Videos</span></a></li>
-                  <li><a href="blog.html" class="close-popup"><img src="images/icons/white/blog.png" alt="" title="" /><span>Blog</span></a></li>
-                  <li><a href="tabs.html" class="close-popup"><img src="images/icons/white/docs.png" alt="" title="" /><span>Tabs</span></a></li>
-                  <li><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/heart.png" alt="" title="" /><span>Social</span></a></li>
-                  <li><a href="#" data-popup=".popup-login" class="open-popup"><img src="images/icons/white/lock.png" alt="" title="" /><span>Login</span></a></li>
-                  <li><a href="tel:1234 5678" class="close-popup external"><img src="images/icons/white/phone.png" alt="" title="" /><span>Call Now</span></a></li>
-                  <li><a href="contact.html" class="close-popup"><img src="images/icons/white/contact.png" alt="" title="" /><span>Contact</span></a></li>
+                  <li><a href="index.html" class="close-popup"><img src="assets/images/icons/white/home.png" alt="" title="" /><span>Inicio</span></a></li>
+                  <li><a href="clientes.html" class="close-popup"><img src="assets/images/icons/white/toogle.png" alt="" title="" /><span>Clientes</span></a></li>
+                  <li><a href="about.html" class="close-popup"><img src="assets/images/icons/white/user.png" alt="" title="" /><span>Clientes</span></a></li>
+                  <li><a href="features.html" class="close-popup"><img src="assets/images/icons/white/settings.png" alt="" title="" /><span>Configuración</span></a></li>
+                  <li><a href="photos.html" class="close-popup"><img src="assets/images/icons/white/photos.png" alt="" title="" /><span>Productos</span></a></li>
+                  <li><a href="videos.html" class="close-popup"><img src="assets/images/icons/white/video.png" alt="" title="" /><span>Videos</span></a></li>
+                  <li><a href="blog.html" class="close-popup"><img src="assets/images/icons/white/blog.png" alt="" title="" /><span>Blog</span></a></li>
+                  <li><a href="tabs.html" class="close-popup"><img src="assets/images/icons/white/docs.png" alt="" title="" /><span>Tabs</span></a></li>
+                  <li><a href="#" data-popup=".popup-social" class="open-popup"><img src="assets/images/icons/white/heart.png" alt="" title="" /><span>Social</span></a></li>
+                  <li><a href="#" data-popup=".popup-login" class="open-popup"><img src="assets/images/icons/white/lock.png" alt="" title="" /><span>Login</span></a></li>
+                  <li><a href="tel:1234 5678" class="close-popup external"><img src="assets/images/icons/white/phone.png" alt="" title="" /><span>Call Now</span></a></li>
+                  <li><a href="contact.html" class="close-popup"><img src="assets/images/icons/white/contact.png" alt="" title="" /><span>Contact</span></a></li>
                 </ul>
               </nav>  
-      <div class="close_popup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+      <div class="close_popup_button"><a href="#" class="close-popup"><img src="assets/images/icons/white/menu_close.png" alt="" title="" /></a></div>
     </div>
     </div> 
     
@@ -126,7 +149,7 @@
     <div class="popup popup-login">
     <div class="content-block-login">
       <h4>INGRESAR</h4>
-      <div class="form_logo"><img src="images/logo.png" alt="" title="" /></div>
+      <div class="form_logo"><img src="assets/images/logo.png" alt="" title="" /></div>
             <div class="loginform">
             <form id="LoginForm" method="post">
             <input type="text" name="Username" value="" class="form_input required" placeholder="Usuario" />
@@ -141,7 +164,7 @@
             </div>-->
             
             </div>
-      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="assets/images/icons/white/menu_close.png" alt="" title="" /></a></div>
     </div>
     </div>
     
@@ -151,7 +174,7 @@
     <div class="popup popup-editaC">
     <div class="content-block-login">
       <h4>EDITA ESTE CLIENTE</h4>
-      <div class="form_logo"><img src="images/logo.png" alt="" title="" /></div>
+      <div class="form_logo"><img src="assets/images/logo.png" alt="" title="" /></div>
             <div class="loginform">
             <form id="LoginForm" method="post">
             <input type="text" name="Username" value="" class="form_input required" placeholder="Nombre del Establecimiento" />
@@ -167,7 +190,7 @@
             </div>-->
             
             </div>
-      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="assets/images/icons/white/menu_close.png" alt="" title="" /></a></div>
     </div>
     </div>
     
@@ -178,7 +201,7 @@
     <div class="popup popup-borrar popup_borrar">
     <div class="content-block-login">
       <h4>BORRAR CLIENTE</h4>
-      <div class="form_logo"><img src="images/logo.png" alt="" title="" /></div>
+      <div class="form_logo"><img src="assets/images/logo.png" alt="" title="" /></div>
             <div class="loginform">
             <form id="LoginForm" method="post">
             <P style="font-size:36px; line-height:36px; font-weight:bold; margin-bottom:100px;">
@@ -188,7 +211,7 @@
             </form>
            
             </div>
-      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="assets/images/icons/white/menu_close.png" alt="" title="" /></a></div>
     </div>
     </div>
     
@@ -200,7 +223,7 @@
     <div class="popup popup-signup">
     <div class="content-block-login">
       <h4>REGISTER</h4>
-      <div class="form_logo"><img src="images/logo.png" alt="" title="" /></div>
+      <div class="form_logo"><img src="assets/images/logo.png" alt="" title="" /></div>
             <div class="loginform">
             <form id="LoginForm" method="post">
             <input type="text" name="Username" value="" class="form_input required" placeholder="username" />
@@ -212,7 +235,7 @@
             <a href="#" class="signup_facebook">FACEBOOK</a>
             <a href="#" class="signup_twitter">TWITTER</a>            </div>
             </div>
-      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="assets/images/icons/white/menu_close.png" alt="" title="" /></a></div>
     </div>
     </div>
     
@@ -220,7 +243,7 @@
     <div class="popup popup-forgot">
     <div class="content-block-login">
       <h4>FORGOT PASSWORD</h4>
-      <div class="form_logo"><img src="images/logo.png" alt="" title="" /></div>
+      <div class="form_logo"><img src="assets/images/logo.png" alt="" title="" /></div>
             <div class="loginform">
             <form id="LoginForm" method="post">
             <input type="text" name="Email" value="" class="form_input required" placeholder="email" />
@@ -230,7 +253,7 @@
             <p>Check your email and follow the instructions to reset your password.</p>
             </div>
             </div>
-      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="assets/images/icons/white/menu_close.png" alt="" title="" /></a></div>
     </div>
     </div>
     
@@ -249,7 +272,7 @@
             <p style="font-size:20px;">Representante</p>
           </div>
       </ul>
-      <div class="close_popup_button"><a href="index.html" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+      <div class="close_popup_button"><a href="index.html" class="close-popup"><img src="assets/images/icons/white/menu_close.png" alt="" title="" /></a></div>
     </div>
     </div>
     
@@ -263,24 +286,24 @@
       <h4>Follow Us</h4>
       <p>Social icons solution that allows you share and increase your social popularity.</p>
       <ul class="social_share">
-      <li><a href="#"><img src="images/icons/white/twitter.png" alt="" title="" /></a></li>
-      <li><a href="#"><img src="images/icons/white/facebook.png" alt="" title="" /></a></li>
-      <li><a href="#"><img src="images/icons/white/googleplus.png" alt="" title="" /></a></li>
-      <li><a href="#"><img src="images/icons/white/dribbble.png" alt="" title="" /></a></li>
-      <li><a href="#"><img src="images/icons/white/linkedin.png" alt="" title="" /></a></li>
-      <li><a href="#"><img src="images/icons/white/pinterest.png" alt="" title="" /></a></li>
+      <li><a href="#"><img src="assets/images/icons/white/twitter.png" alt="" title="" /></a></li>
+      <li><a href="#"><img src="assets/images/icons/white/facebook.png" alt="" title="" /></a></li>
+      <li><a href="#"><img src="assets/images/icons/white/googleplus.png" alt="" title="" /></a></li>
+      <li><a href="#"><img src="assets/images/icons/white/dribbble.png" alt="" title="" /></a></li>
+      <li><a href="#"><img src="assets/images/icons/white/linkedin.png" alt="" title="" /></a></li>
+      <li><a href="#"><img src="assets/images/icons/white/pinterest.png" alt="" title="" /></a></li>
       </ul>
-      <div class="close_popup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+      <div class="close_popup_button"><a href="#" class="close-popup"><img src="assets/images/icons/white/menu_close.png" alt="" title="" /></a></div>
     </div>
     </div>
-    
-<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-<script src="js/jquery.validate.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/framework7.js"></script>
-<script type="text/javascript" src="js/my-app.js"></script>
-<script type="text/javascript" src="js/jquery.swipebox.js"></script>
-<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="js/email.js"></script>
+        
+<script type="text/javascript" src="assets/js/jquery-1.10.1.min.js"></script>
+<script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/framework7.js"></script>
+<script type="text/javascript" src="assets/js/my-app.js"></script>
+<script type="text/javascript" src="assets/js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="assets/js/email.js"></script>
 
 
 </body>
