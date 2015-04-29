@@ -13,6 +13,7 @@
 			<!--<access origin="http://www.puertolab.com/" />-->
 
 			<preference name="permissions" value="none"/>
+			<plugin name="Notification" value="org.apache.cordova.Notification"/>
 			
 			<gap:splash src="assets/splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
 			<gap:splash src="assets/splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
